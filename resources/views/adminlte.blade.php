@@ -11,10 +11,11 @@
 
                 <h4>Matrícula</h4>
 
-                Shared State
+                    <form-user></form-user>
+
 
                     <wizard>
-                        <wizard-step title="Usuari">
+                        <wizard-step title="Usuari" active="true">
                             Step 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, tempore voluptatum. At blanditiis deleniti doloribus ducimus eaque ex excepturi facere ipsum laborum maxime neque odit, officia quod, tenetur, ullam voluptatem.
                         </wizard-step>
                         <wizard-step title="Dades personals">

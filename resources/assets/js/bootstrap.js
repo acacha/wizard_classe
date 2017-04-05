@@ -14,6 +14,13 @@ require('bootstrap-less');
 require('admin-lte');
 window.toastr = require('toastr');
 require('icheck');
+require('select2');
+
+//Exemple de global storage (all app)
+import {state,store} from './store'
+window.state = state
+window.store = store
+
 
 /**
  * Vue is a modern JavaScript library for building interactive web interfaces
