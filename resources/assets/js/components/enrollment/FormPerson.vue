@@ -3,7 +3,7 @@
         <div class="form-group has-feedback" :class="{ 'has-error': form.errors.has('user') }">
 
             <!-- WET -->
-            <label for="user">User:</label>
+            <label for="user">PERSON FORM TODO:</label>
 
                 <select class="form-control select2" style="width: 100%;">
 
@@ -15,7 +15,7 @@
             <span class="help-block" v-if="form.errors.has('user')" v-text="form.errors.get('name')"></span>
 
         </div>
-        <button type="submit" class="btn btn-primary btn-block btn-flat" :disabled="form.errors.any()"><i v-if="form.submitting" class="fa fa-refresh fa-spin"></i> Next</button>
+        <button v-if="submitButton" type="submit" class="btn btn-primary btn-block btn-flat" :disabled="form.errors.any()"><i v-if="form.submitting" class="fa fa-refresh fa-spin"></i> Next</button>
     </form>
 </template>
 
@@ -26,6 +26,12 @@
       return {
         form: new Form( { user: ''} ),
         users: []
+      }
+    },
+    props: {
+      submitButton:{
+        type:Boolean,
+        default: true
       }
     },
     methods: {
